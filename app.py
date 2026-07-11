@@ -39,3 +39,6 @@ if user_input:
     # Append AI response
     st.session_state.chat_history.append(AIMessage(content=response))
     st.chat_message("assistant").markdown(response)
+
+st.markdown("---")
+st.markdown("<p style='text-align: center; color: #888; font-size: 0.875rem;'>Built by <strong>FUERA</strong></p>", unsafe_allow_html=True)
