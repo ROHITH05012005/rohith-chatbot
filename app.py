@@ -41,4 +41,4 @@ if user_input:
     st.chat_message("assistant").markdown(response)
 
 st.markdown("---")
-st.markdown("<p style='text-align: center; color: #888; font-size: 0.875rem;'>Built by <strong>FUERA</strong></p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #888; font-size: 0.875rem;'>Built by <a href='https://www.fuera.in.net/' target='_blank' style='color: inherit; text-decoration: underline;'><strong>FUERA</strong></a></p>", unsafe_allow_html=True)
