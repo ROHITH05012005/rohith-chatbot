@@ -40,5 +40,25 @@ if user_input:
     st.session_state.chat_history.append(AIMessage(content=response))
     st.chat_message("assistant").markdown(response)
 
-st.markdown("---")
-st.markdown("<p style='text-align: center; color: #888; font-size: 0.875rem;'>Built by <a href='https://www.fuera.in.net/' target='_blank' style='color: inherit; text-decoration: underline;'><strong>FUERA</strong></a></p>", unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px;
+        font-size: 0.875rem;
+        color: #888;
+        z-index: 100;
+    }
+    </style>
+    <div class="footer">
+        Built by <a href='https://www.fuera.in.net/' target='_blank' style='color: inherit; text-decoration: underline;'><strong>FUERA</strong></a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
